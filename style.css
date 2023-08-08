@@ -524,9 +524,6 @@ input,select{
         align-items: flex-start;
         color: white !important;
         position: relative;
-        position: fixed;
-        top: 0;
-        padding-left: 2%;
     }
     #logo{
         width: 70%;
@@ -573,7 +570,7 @@ input,select{
         height: auto;
     }
     #form-division{
-        padding-top: 6.5rem;
+        padding-top: 1.5rem;
         flex-direction: column;
     }
     #formu{
