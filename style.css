@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*navpeque*/
+.navbar {
+    height: 16%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(66, 69, 252);
+    padding: 10px 20px;
+    position: relative;
+}
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar-toggle {
+    display: none;
+}
+.navbar-toggler {
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    padding-top: 15px;
+    position: absolute;
+}
+#hamburguesa{
+    height: 100% !important;
+    width: auto!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/*nav grande*/
+#grande{
+    background-color: rgb(66, 69, 252);
+    display: flex;
+    justify-content: space-around;
+    height: 16%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+}
+nav div p a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#consultar{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+}
+#consultar > a{
+    color: black;
+    text-decoration: none;
+}
+#consultar:hover{
+    background-color: rgb(147, 223, 223);
+    border: 1px solid black;
+    transition: ease-in-out 1s;
+}
+
+
+/*formulario*/
+#formulario{
+    height: 84%;
+    background-image: url(./images/Fondo.png);
+    background-size: cover;
+}
+
+#form-division{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#formu{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    height: 90%;
+    width: 75%;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.6rem 1rem 1.6rem;
+}
+#titulo-form{
+    height: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#titulo-form > h4{
+    font-size: 29px;
+    text-align: center;
+}
+#titulo-form > p{
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.6px;
+}
+#form-text{
+    height: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input,select{
+    margin-bottom: 0.3rem;
+    height: 1.4rem;
+}
+#boton{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#consultar2{
+    height: 100%;
+    width: 8rem;
+    border: none;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border-radius: 12px;
+}
+#consultar2 > a{
+    color: white;
+    text-decoration: none;
+}
+#consultar2:hover{
+    background-color: rgb(13, 1, 77);
+    border: 1px solid black;
+    transition: ease-in-out 1s;
+}
+
+#info1{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+}
+#info1 > h4{
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(46, 46, 46);
+}
+#info1 > p{
+    line-height: 1.4rem;
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(46, 46, 46);
+}
+#conocer{
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(0, 110, 255);
+}
+#conocer > a{
+    color: white;
+    text-decoration: none;
+}
+#conocer:hover{
+    background-color: rgb(13, 1, 77);
+    border: 1px solid black;
+    transition: ease-in-out 1s;
+}
+
+/*Sombrilla*/
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+#que-es{
+    height: 84%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+}
+#titulo-que{
+    grid-column: 1/3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 100;
+}
+#info-que{
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    gap: 2rem;
+    color: rgb(73, 73, 73);
+}
+#etapas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#etapas > a{
+    color: black;
+}
+#sombrilla{
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sombrilla-img{
+    width: 80%;
+}
+
+/*Bancos*/
+#bancos{
+    height: 84%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%;
+    grid-template-rows: 18% 50% 22% 10%;
+}
+#titulo-bancos{
+    grid-column: 1/4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 100;
+    color: rgb(73, 73, 73);
+}
+#bancamia{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+#fecha2{
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 5.4rem;
+}
+#bancamia-img{
+    width: 60%;
+}
+#bancolombia{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+#fecha3{
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+#autorizados{
+    font-size: 30px;
+    color: rgb(73, 73, 73);
+    font-weight: 100;
+}
+#bancolombia-img{
+    width: 60%;
+}
+#cajaSocial{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+#bancoSocial{
+    width: 65%;
+}
+#daviplata{
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 2.8rem;
+}
+#daviplata-img,#movil-img{
+    width: 10%;
+}
+#preguntasFrecuentes{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#preguntasFrecuentes > a{
+    color: black;
+}
+
+/*Preguntas Frecuentes 1*/
+#preguntas1{
+    height: 84%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#titulo-pregunta1{
+    font-size: 30px;
+    height: 10%;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(73, 73, 73);
+}
+#pregunta1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+#bolita{
+    height: 1.8rem;
+    width: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(54, 124, 255);
+    color: white;
+}
+#question{
+    font-size: 26px;
+    font-weight: 800;
+}
+#answer{
+    font-size: 22px;
+    color: rgb(73, 73, 73);
+    font-weight: 100;
+}
+#ver-mas{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#ver-mas > a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Preguntas Frecuentes 2*/
+#preguntas2{
+    height: 84%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pregunta2{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+#answer2{
+    font-size: 16px;
+}
+#ver-mas2{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#ver-mas2 > a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Mas preguntas*/
+.icon1{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: white;
+}
+#preguntas3{
+    height: 84%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+#pregunta3{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+#mas-preguntas{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gran{
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(54, 124, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+#gran > h2{
+    font-size: 32px;
+}
+#gran > p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+#footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(66, 69, 252);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        width: 100%;
+        align-items: flex-start;
+        color: white !important;
+        position: relative;
+        position: fixed;
+        top: 0;
+        padding-left: 2%;
+    }
+    #logo{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #futuro{
+        height:68%;
+    }
+    #hamburguesa{
+        height: 100% !important;
+        width: auto!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-toggler{
+        position: relative;
+    }
+    .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(66, 69, 252);
+    width: 100%;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    padding: 1rem;
+    line-height: 2rem;
+    }
+    .navbar-toggle:checked ~ .navbar-menu {
+    display: flex;
+    }
+    #grande{
+        top: -90px;
+        position: absolute;
+    }
+}
+
+@media (max-width:1000px){
+    #formulario,#que-es,#bancos,#preguntas1,#preguntas2,#preguntas3{
+        height: auto;
+    }
+    #form-division{
+        padding-top: 6.5rem;
+        flex-direction: column;
+    }
+    #formu{
+        width: 100%;
+    }
+    form{
+        height: 100%;
+        width: 85%;
+    }
+    input,select{
+        margin-bottom: 0.3rem;
+        height: 1.2rem;
+    }
+    #boton{
+        height:11%;
+    }
+    #info1{
+        width: 100%;
+    }
+    
+    #que-es{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    #titulo-que{
+        padding-top: 2rem;
+    }
+    #info-que{
+        height: auto;
+        justify-content: flex-start;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    #sombrilla-img{
+       width: 50%;
+    }
+
+    #bancos{
+        text-align: center;
+    }
+    #bancamia,#bancolombia,#cajasocial,#daviplata{
+        height: auto;
+    }
+    #fecha2{
+        padding-bottom: 3.5rem;
+        font-size: 16px;
+    }
+    #fecha3{
+        padding-bottom: 1rem;
+        font-size: 16px;
+    }
+    #autorizados{
+        width: 100%;
+        font-size: 22px;
+    }
+    #daviplata{
+        height: auto;
+        padding-top: 1.2rem;
+    }
+
+    #question{
+        font-size:15px;
+    }
+    #preguntas1,#preguntas2,#preguntas3{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    #answer{
+        font-size: 15px;
+    }
+    #gran{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    #gran > h2{
+        font-size: 25px;
+    }
+    #gran > p{
+        font-size: 16px;
+    }
+
+    #footer{
+        flex-direction: column;
+        height: auto;
+        font-size: 14px;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    #gov{
+        width: 90%;
+    }
+}
